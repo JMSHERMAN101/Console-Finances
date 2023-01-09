@@ -1,3 +1,4 @@
+
 var finances = [
     ['Jan-2010', 867884],
     ['Feb-2010', 984655],
@@ -103,12 +104,22 @@ console.log("Total: $" + nTotal);
 
 var totalChange =0;
 
-for (var i = 0; i < finances.length; i++) {
-
+for (var i =0; i < finances.length; i++) {
 if (i > 0) {var change = finances[i][1] - finances[i-1][1];
     totalChange += change;
   }
 }
 
+var avgChange =totalChange / (finances.length - 1);
+console.log("Average Change: $" + avgChange.toFixed(2));
 
+var greatestInc =0;
+var greatestIncDate = "";
+
+for (var i =0; i < finances.length; i++) {if (i > 0) {var change = finances[i][1] - finances[i-1][1];
+    if (change > greatestInc) {greatestInc = change;
+        greatestIncDate = finances[i][0];
+      }
+    }
+  }  
 
