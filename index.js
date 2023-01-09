@@ -86,3 +86,16 @@ var finances = [
     ['Jan-2017', 138230],
     ['Feb-2017', 671099],
   ];
+
+console.log("Financial Analysis");
+    console.log("--------------");
+
+var numMonths = 0;
+
+for (var i = 0; i < finances.length; i++) { numMonths++; }
+console.log("Total Months:" + numMonths);
+var nTotal = 0;
+
+
+
+
