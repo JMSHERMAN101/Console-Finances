@@ -90,12 +90,25 @@ var finances = [
 console.log("Financial Analysis");
     console.log("--------------");
 
-var numMonths = 0;
+var numMonths =0;
 
-for (var i = 0; i < finances.length; i++) { numMonths++; }
+for (var i =0; i < finances.length; i++) { numMonths++; }
 console.log("Total Months:" + numMonths);
-var nTotal = 0;
+var nTotal =0;
 
+for (var i =0; i < finances.length; i++) {nTotal += finances[i][1];
+}
+
+console.log("Total: $" + nTotal);
+
+var totalChange =0;
+
+for (var i = 0; i < finances.length; i++) {
+
+if (i > 0) {var change = finances[i][1] - finances[i-1][1];
+    totalChange += change;
+  }
+}
 
 
 
