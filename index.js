@@ -105,13 +105,13 @@ console.log("Total: $" + nTotal);
 var totalChange =0;
 
 for (var i =0; i < finances.length; i++) {
-if (i > 0) {var change = finances[i][1] - finances[i-1][1];
+    if (i > 0) {var change = finances[i][1] - finances[i-1][1];
     totalChange += change;
   }
 }
 
 var avgChange =totalChange / (finances.length - 1);
-console.log("Average Change: $" + avgChange.toFixed(2));
+    console.log("Average Change: $" + avgChange.toFixed(2));
 
 var greatestInc =0;
 var greatestIncDate = "";
@@ -123,3 +123,19 @@ for (var i =0; i < finances.length; i++) {if (i > 0) {var change = finances[i][1
     }
   }  
 
+var greatestDec = 0;
+var greatestDecDate = ""; 
+
+for (var i = 0; i < finances.length; i++) {
+    if (i > 0) {
+        var change = finances[i][1] - finances[i-1][1];
+
+    if (change < greatestDec) { greatestDec = change;
+    greatestDecDate = finances[i][0];
+        }
+    }
+}     
+
+console.log("Greatest Increase in Profits: " + greatestIncDate + " ($" + greatestInc + ")");
+
+console.log("Greatest Decrease in Losses: " + greatestDecDate + " ($" + greatestDec + ")");
