@@ -10,4 +10,5 @@ This project involved analysing monthly financial data to calculate:
 5. The greatest decrease in losses (date and amount) over the entire period.
 
 Link to deployed application: 
+
 Link to repository: 
