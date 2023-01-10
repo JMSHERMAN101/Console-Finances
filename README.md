@@ -9,6 +9,6 @@ This project involved analysing monthly financial data to calculate:
 4. The greatest increase in profits (date and amount) over the entire period.
 5. The greatest decrease in losses (date and amount) over the entire period.
 
-Link to deployed application: 
+Link to deployed application: http://127.0.0.1:5500/Console-Finances/index.html
 
-Link to repository: 
+Link to repository: https://github.com/JMSHERMAN101/Console-Finances
